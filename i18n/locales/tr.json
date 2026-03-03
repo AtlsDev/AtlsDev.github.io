@@ -1,22 +1,3 @@
 {
-  "homepage": "Ana Sayfa",
-  "frameworks": "Eklentiler",
-  "extensions": "Uzantılar",
-  "recommend_extensions": "Önerilen Uzantılar",
-  "components": "Parçacıklar",
-  "auth": {
-    "login": "Giriş Yap",
-    "logout": "Çıkış Yap",
-    "register": "Üyel Ol",
-    "sign_in_with": "{provider} İle Giriş Yap",
-    "dont_have_an_account": "Hesabınız yok mu?",
-    "sign_up_its_free": "Ücretsiz üye olun!",
-    "do_you_already_have_an_account": "Zaten bir hesabın var mı?",
-    "remember_me": "Beni hatırla"
-  },
-  "user": {
-    "username": "Kullanıcı Adı",
-    "password": "Parola",
-    "profile": "Profil"
-  }
+  "welcome": "Hoşgeldiniz!"
 }

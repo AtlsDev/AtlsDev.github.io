@@ -1,32 +1,38 @@
 {
-  "name": "nuxt-app",
+  "name": "synthia-nuxt",
   "type": "module",
+  "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "test": "vitest",
     "lint": "eslint",
     "lint:fix": "eslint --fix"
   },
   "dependencies": {
-    "@nuxt/fonts": "^0.11.3",
-    "@nuxt/image": "^1.10.0",
-    "@nuxt/ui": "^3.1.1",
-    "@nuxtjs/i18n": "^9.5.4",
-    "@pinia/nuxt": "^0.11.0",
-    "@tailwindcss/vite": "^4.1.6",
-    "nuxt": "^3.17.2",
-    "pinia": "^3.0.2",
-    "tailwindcss": "^4.1.6",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.1",
-    "yup": "^1.6.1"
+    "@nuxt/ui": "^4.5.1",
+    "@nuxtjs/i18n": "^10.2.3",
+    "@pinia/nuxt": "0.11.3",
+    "@vueuse/nuxt": "14.2.1",
+    "nuxt": "^4.3.1",
+    "tailwindcss": "^4.2.1",
+    "vue": "^3.5.29",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.13.0",
-    "eslint": "^9.26.0"
+    "@antfu/eslint-config": "^7.6.1",
+    "@nuxt/test-utils": "^4.0.0",
+    "@vue/test-utils": "^2.4.6",
+    "eslint": "^10.0.2",
+    "happy-dom": "^20.8.3",
+    "playwright-core": "^1.58.2",
+    "vitest": "^4.0.18"
   }
 }

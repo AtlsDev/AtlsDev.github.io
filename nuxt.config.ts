@@ -1,35 +1,33 @@
-import process from 'node:process'
-import tailwindcss from '@tailwindcss/vite'
-
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
-  devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
-  modules: ['@pinia/nuxt', '@nuxtjs/i18n', '@nuxt/fonts', '@nuxt/image', '@nuxt/ui'],
-  runtimeConfig: {
-    public: {
-      appName: process.env.NUXT_APP_APP_NAME,
-      creatorUrl: process.env.NUXT_APP_CREATOR_URL,
-    },
-  },
+  compatibilityDate: '2025-07-15',
 
-  vite: {
-    plugins: [
-      tailwindcss(),
-    ],
-  },
+  devtools: { enabled: true },
+
+  modules: [
+    '@nuxt/ui',
+    '@nuxtjs/i18n',
+    '@pinia/nuxt',
+    '@nuxt/test-utils/module',
+    '@vueuse/nuxt',
+  ],
+
+  css: [
+    '~/assets/css/main.css',
+  ],
 
   i18n: {
-    defaultLocale: 'en',
-    locales: [
-      { code: 'en', name: 'English', file: 'en.json' },
-      { code: 'tr', name: 'Türkçe', file: 'tr.json' },
-    ],
     strategy: 'no_prefix',
+    defaultLocale: 'en',
+    locales: [{
+      code: 'tr',
+      name: 'Türkçe',
+      file: 'tr.json',
+    }, {
+      code: 'en',
+      name: 'English',
+      file: 'en.json',
+    }],
   },
 
-  ui: {
-    fonts: false,
-    prefix: 'Ui',
-  },
 })

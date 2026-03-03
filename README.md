@@ -1,75 +1,93 @@
-# Nuxt Minimal Starter
+# synthia-nuxt
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Production-ready Nuxt 4 starter template with Nuxt UI. Clean, minimal, and ready to build on.
 
-## Setup
+---
 
-Make sure to install dependencies:
+## Stack
 
-```bash
-# npm
-npm install
+| Layer      | Technology                                |
+| ---------- | ----------------------------------------- |
+| Framework  | Nuxt 4                                    |
+| UI Library | Nuxt UI 4                                 |
+| Styling    | Tailwind CSS 4                            |
+| State      | Pinia                                     |
+| Router     | Vue Router (via Nuxt)                     |
+| i18n       | @nuxtjs/i18n 10 (JSON)                    |
+| Testing    | Vitest + @nuxt/test-utils                 |
+| Linting    | ESLint (antfu config)                     |
 
-# pnpm
+---
+
+## Features
+
+- **Auto Import** — Vue, Nuxt, Pinia, and i18n composables are available without writing `import`
+- **Nuxt UI Auto Import** — All Nuxt UI components are automatically registered
+- **Layout System** — `default` layout ready to extend
+- **Theming** — Custom color palette (emerald / rose / zinc), dark mode support via Nuxt UI
+- **i18n** — JSON-based multi-language setup, `en` and `tr` locales included
+- **Nuxt DevTools** — Enabled out of the box for a better dev experience
+- **Type Safe** — TypeScript with full type checking
+
+---
+
+## Getting Started
+
+```sh
+# Install dependencies
 pnpm install
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
+# Start development server
 pnpm dev
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
+# Production build
 pnpm build
 
-# yarn
-yarn build
+# Generate static site
+pnpm generate
 
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
+# Preview production build
 pnpm preview
 
-# yarn
-yarn preview
+# Run tests
+pnpm test
 
-# bun
-bun run preview
+# Lint
+pnpm lint
+
+# Lint + auto-fix
+pnpm lint:fix
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+---
+
+## Directory Structure
+
+```text
+app/
+├── assets/css/       # Global styles
+├── components/       # Shared components (auto-imported)
+├── composables/      # Composables (auto-imported)
+├── layouts/          # default.vue
+├── pages/            # Page components (file-based routing)
+├── stores/           # Pinia stores (auto-imported)
+└── utils/            # Utility functions (auto-imported)
+i18n/
+└── locales/
+    ├── en.json       # English locale
+    └── tr.json       # Turkish locale
+```
+
+---
+
+## IDE
+
+**VS Code** + **[Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar)** extension is recommended.
+
+**Nuxt DevTools** is enabled by default and accessible in the browser during development.
+
+---
+
+## Author
+
+Built by **[atlaxt](https://github.com/atlaxt)**

@@ -1,7 +1,4 @@
 {
-  // Css
-  "css.lint.unknownAtRules": "ignore",
-
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,
   "editor.formatOnSave": false,
@@ -12,7 +9,7 @@
     "source.organizeImports": "never"
   },
 
-  // Silent the stylistic rules in you IDE, but still auto fix them
+  // Silent the stylistic rules in your IDE, but still auto fix them
   "eslint.rules.customizations": [
     { "rule": "style/*", "severity": "off", "fixable": true },
     { "rule": "format/*", "severity": "off", "fixable": true },
@@ -36,6 +33,7 @@
     "html",
     "markdown",
     "json",
+    "json5",
     "jsonc",
     "yaml",
     "toml",
